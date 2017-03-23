@@ -363,30 +363,34 @@ StScrollBar StButton#hhandle {
 }
 
 #panelLeft:ltr {
-padding-left: 0px;
+    padding-left: 0px;
 }
 
 #panelLeft:rtl {
-padding-left: 0px;
+    padding-left: 0px;
 }
 
 #panelRight:ltr {
-padding-right: 0px;
+    padding-right: 0px;
 spacing: 0px;
 }
 
 #panelRight:rtl {
-padding-right: 0px;
+    padding-right: 0px;
 spacing: 0px;
+}
+
+#panel:highlight {
+    background-color: #aa5555;
 }
 
 .panel-status-button,
 .panel-button {
--natural-hpadding: 5px;
--minimum-hpadding: 5px;
-font-weight: bold;
-border: 1px solid transparent;
-transition-duration: 150; 
+    -natural-hpadding: 5px;
+    -minimum-hpadding: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition-duration: 150; 
 }
 
 .panel-status-button:hover,
@@ -399,20 +403,19 @@ transition-duration: 150;
 }
 
 .system-status-icon {
-icon-size: 1.3em;
+    icon-size: 1.3em;
 }
 
 #panelLeft:dnd {
-background: #1f1f1f;
-
+    background: #1f1f1f;
 }
 
 #panelCenter:dnd {
-background: #222;
+    background: #222;
 }
 
 #panelRight:dnd {
-background: #111;
+    background: #111;
 }
 /* ===================================================================
  * Expo view
