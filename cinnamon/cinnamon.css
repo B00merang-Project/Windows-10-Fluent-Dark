@@ -377,11 +377,11 @@ spacing: 0px;
 
 #panelRight:rtl {
     padding-right: 0px;
-spacing: 0px;
+    spacing: 0px;
 }
 
 #panel:highlight {
-    background-color: #aa5555;
+    background-color: #004D8C;
 }
 
 .panel-status-button,
