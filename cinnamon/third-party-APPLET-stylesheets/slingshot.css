@@ -83,18 +83,13 @@
 /*--- App Buttons ---*/
 
 .slingshot .button.app {
-    border-image: none;
-    border-width: 0;
+    background-color: rgba(0,0,0,0.3);
     font-size: 9pt;
     padding: 0;
 }
 
 .slingshot .app:hover {
-    border-image: url("../background-assets/hover.svg") 4;
-    background-gradient-direction: vertical;
-    background-gradient-end: transparent;
-    background-gradient-start: transparent;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.3);
     color: #fff;
 }
 
