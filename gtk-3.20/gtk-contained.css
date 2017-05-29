@@ -210,6 +210,19 @@ assistant .sidebar label.highlight {
     text-shadow: none;
     -gtk-icon-shadow: none; }
 
+/* nemo icon view entry */
+.nemo-window .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: 3px;
+    color: @theme_fg_color;
+    border-color: @theme_selected_bg_color;
+    background-color: @theme_base_color; }
+  
+.nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
 /*********************
  * Spinner Animation *
  *********************/
@@ -2256,6 +2269,98 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none; }
 .titlebar:not(headerbar) > separator {
   background-color: @borders; }
+
+/******************
+ * Window actions *
+ ******************/
+
+.titlebar .titlebutton.minimize {
+    color: transparent;
+    border-image: none;
+    padding: 6px 12px;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-image: -gtk-scaled(url("buttons/minimize-focused-normal.png"));
+}
+
+.titlebar .titlebutton.minimize:backdrop {
+    background-image: -gtk-scaled(url("buttons/minimize-unfocused-normal.png"));
+    color: transparent;
+}
+
+.titlebar .titlebutton.minimize:hover,
+.titlebar .titlebutton.minimize:active,
+.titlebar .titlebutton.minimize:checked {
+    color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("buttons/minimize-focused-active.png"));
+}
+
+.titlebar .titlebutton.maximize {
+    color: transparent;
+    border: none;
+    padding: 6px 12px;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("buttons/maximize-focused-normal.png"));
+}
+
+.titlebar .titlebutton.maximize:backdrop {
+    background-image: -gtk-scaled(url("buttons/maximize-unfocused-normal.png"));
+    color: transparent;
+}
+
+
+.titlebar .titlebutton.maximize:hover, 
+.titlebar .titlebutton.maximize:active,
+.titlebar .titlebutton.maximize:checked {
+    color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("buttons/maximize-focused-active.png"));
+}
+
+.titlebar .titlebutton.close {
+    color: transparent;
+    border: none;
+    padding: 6px 12px;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: -gtk-scaled(url("buttons/close-focused-normal.png"));
+}
+
+.titlebar .titlebutton.close:backdrop {
+    background-image: -gtk-scaled(url("buttons/close-unfocused-normal.png"));
+    color: transparent;
+}
+
+
+.titlebar .titlebutton.close:hover,
+.titlebar .titlebutton.close:active,
+.titlebar .titlebutton.close:checked  {
+    color: transparent;
+    border-image: none;
+    box-shadow: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("buttons/close-focused-active.png"));
+}
+
+
 
 /************
  * Pathbars *
