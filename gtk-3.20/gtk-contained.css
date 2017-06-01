@@ -942,17 +942,12 @@ button {
       text-shadow: none;
       -gtk-icon-shadow: none;
       outline-color: @osd_outline; }
-
-/* button.default. Actually, this was present before but rarely used */
-
 button.suggested-action {
   color: @theme_fg_color;
   outline-color: rgba(255, 255, 255, 0.3);
   border-color: shade(@theme_selected_bg_color, 0.6);
   border-bottom-color: shade(@theme_selected_bg_color, 0.6);
   background-image: linear-gradient(to bottom, @theme_selected_bg_color, @theme_selected_bg_color);
-
-/* unsure */
   text-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
   -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
@@ -1047,10 +1042,7 @@ button.suggested-action {
         button.suggested-action:backdrop:disabled:checked label,
         button.suggested-action.flat:backdrop:disabled:active label,
         button.suggested-action.flat:backdrop:disabled:checked label {
-
-/* Hex color! */
-
-          color: #85b4e6; }
+          color: @insensitive_fg_color; }
   .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode button.titlebutton:backdrop:disabled,
   button.suggested-action.flat:backdrop,
   button.suggested-action.flat:disabled,
@@ -1143,8 +1135,6 @@ button.suggested-action {
       box-shadow: none;
       text-shadow: none;
       -gtk-icon-shadow: none; }
-
-/* Hex color! end */
 
 button.destructive-action {
   color: @osd_fg_color;
@@ -1972,7 +1962,7 @@ headerbar {
     color: @theme_selected_fg_color;
     border-color: shade(@theme_selected_bg_color, 0.6);
     text-shadow: 0 -1px @osd_bg_color;
-    background-image: linear-gradient(to top, #276fba, #428bd7 2px, @theme_selected_bg_color 3px);
+    background-image: image(@theme_selected_bg_color);
     background-color: @theme_selected_bg_color;
     box-shadow: inset 0 1px rgba(146, 188, 232, 0.9); }
     .selection-mode.titlebar:backdrop:not(headerbar),
@@ -1986,10 +1976,10 @@ headerbar {
       outline-color: rgba(255, 255, 255, 0.3);
       border-color: shade(@theme_selected_bg_color, 0.6);
       border-bottom-color: shade(@theme_selected_bg_color, 0.6);
-      background-image: linear-gradient(to bottom, @theme_selected_bg_color, #3986d5 60%, @borders);
+      background-image: image(@theme_selected_bg_color);
       text-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
       -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.54353);
-      box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
+      /*box-shadow: inset 0 1px rgba(255, 255, 255, 0.4);*/ }
       .selection-mode.titlebar:not(headerbar) button.flat,
       headerbar.selection-mode button.flat {
         border-color: transparent;
@@ -2004,7 +1994,7 @@ headerbar {
         outline-color: rgba(255, 255, 255, 0.3);
         border-color: shade(@theme_selected_bg_color, 0.6);
         border-bottom-color: shade(@theme_selected_bg_color, 0.6);
-        background-image: linear-gradient(to bottom, #63a0de, @theme_selected_bg_color 60%, #3986d5);
+        background-image: image(@theme_selected_bg_color);
         text-shadow: 0 -1px rgba(0, 0, 0, 0.49553);
         -gtk-icon-shadow: 0 -1px rgba(0, 0, 0, 0.49553);
         box-shadow: inset 0 1px rgba(255, 255, 255, 0.4); }
@@ -2035,7 +2025,7 @@ headerbar {
         headerbar.selection-mode button:backdrop.flat,
         headerbar.selection-mode button:backdrop label,
         headerbar.selection-mode button:backdrop {
-          color: @theme_selected_bg_color; }
+          color: @theme_selected_fg_color; }
         .selection-mode.titlebar:not(headerbar) button:backdrop.flat:active, .selection-mode.titlebar:not(headerbar) button:backdrop.flat:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:active, .selection-mode.titlebar:not(headerbar) button:backdrop:checked,
         headerbar.selection-mode button:backdrop.flat:active,
         headerbar.selection-mode button:backdrop.flat:checked,
@@ -2055,7 +2045,7 @@ headerbar {
           headerbar.selection-mode button:backdrop:active,
           headerbar.selection-mode button:backdrop:checked label,
           headerbar.selection-mode button:backdrop:checked {
-            color: @theme_selected_bg_color; }
+            color: @theme_selected_fg_color; }
         .selection-mode.titlebar:not(headerbar) button:backdrop.flat:disabled, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled,
         headerbar.selection-mode button:backdrop.flat:disabled,
         headerbar.selection-mode button:backdrop:disabled {
@@ -2071,7 +2061,7 @@ headerbar {
           headerbar.selection-mode button:backdrop.flat:disabled,
           headerbar.selection-mode button:backdrop:disabled label,
           headerbar.selection-mode button:backdrop:disabled {
-            color: #9bc2ea; }
+            color: @insensitive_fg_color; }
           .selection-mode.titlebar:not(headerbar) button:backdrop.flat:disabled:active, .selection-mode.titlebar:not(headerbar) button:backdrop.flat:disabled:checked, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled:active, .selection-mode.titlebar:not(headerbar) button:backdrop:disabled:checked,
           headerbar.selection-mode button:backdrop.flat:disabled:active,
           headerbar.selection-mode button:backdrop.flat:disabled:checked,
@@ -2087,10 +2077,7 @@ headerbar {
             headerbar.selection-mode button:backdrop.flat:disabled:checked label,
             headerbar.selection-mode button:backdrop:disabled:active label,
             headerbar.selection-mode button:backdrop:disabled:checked label {
-
-/* hex color! */
-
-              color: #85b4e6; }
+              color: @insensitive_fg_color; }
       .selection-mode.titlebar:not(headerbar) button.flat:backdrop, .selection-mode.titlebar:not(headerbar) button.flat:disabled, .selection-mode.titlebar:not(headerbar) button.flat:backdrop:disabled,
       headerbar.selection-mode button.flat:backdrop,
       headerbar.selection-mode button.flat:disabled,
@@ -2112,7 +2099,7 @@ headerbar {
         .selection-mode.titlebar:not(headerbar) button:disabled label, .selection-mode.titlebar:not(headerbar) button:disabled,
         headerbar.selection-mode button:disabled label,
         headerbar.selection-mode button:disabled {
-          color: #b2d0ef; }
+          color: @insensitive_fg_color; }
         .selection-mode.titlebar:not(headerbar) button:disabled:active, .selection-mode.titlebar:not(headerbar) button:disabled:checked,
         headerbar.selection-mode button:disabled:active,
         headerbar.selection-mode button:disabled:checked {
@@ -2201,8 +2188,8 @@ headerbar {
     .selection-mode.titlebar:not(headerbar) .selection-menu:backdrop, .selection-mode.titlebar:not(headerbar) .selection-menu,
     headerbar.selection-mode .selection-menu:backdrop,
     headerbar.selection-mode .selection-menu {
-      border-color: shade(@theme_selected_bg_color, 0);
-      background-color: shade(@theme_selected_bg_color, 0);
+      border-color: shade(@theme_selected_bg_color, 1.0);
+      background-color: shade(@theme_selected_bg_color, 1.0);
       background-image: none;
       box-shadow: none;
       padding-left: 10px;
@@ -2273,7 +2260,6 @@ window.csd > .titlebar:not(headerbar) {
 /******************
  * Window actions *
  ******************/
-
 .titlebar .titlebutton.minimize {
     color: transparent;
     border-image: none;
