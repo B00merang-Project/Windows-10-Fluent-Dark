@@ -326,6 +326,9 @@ check,
 radio,
 check:disabled,
 radio:disabled {
+    min-height: 20px;
+    min-width: 20px;
+    padding: 3px;
     border-style: none;
     background-color: transparent;
 }
