@@ -1263,7 +1263,7 @@ popover.background:backdrop {
  * notebook *
  ************/
 notebook {
-    background-color: @theme_base_color;
+    background-color: @theme_base_color
     background-image: none;
     border-radius: 0;
     padding: 0;
@@ -1992,26 +1992,12 @@ combobox separator {
 /***********
  * sidebar *
  ***********/
-/* nautilus transparency (csd code from arc) */
-filechooser.csd.background,
-filechooser placessidebar list,
-.nautilus-window.csd.background,
-.nautilus-window placessidebar list {
-    background-color: transparent;
-}
-        
 .sidebar,
 .sidebar view,
 .sidebar > view,
 .sidebar scrolledwindow {
-    background-color: alpha(@dark_bg_color, 0.6);
-}
-
-.sidebar:backdrop,
-.sidebar view:backdrop,
-.sidebar > view:backdrop,
-.sidebar scrolledwindow:backdrop {
     background-color: @theme_bg_color;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.1);
 }
 
 .sidebar row:selected,
