@@ -39,7 +39,7 @@
 
 .check:disabled, check:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-active.png"), url("assets/checkbox-checked-active@2.png"));
   -gtk-icon-shadow: none; }
   .check:disabled:backdrop, check:disabled:backdrop {
     opacity: 0.8;
@@ -60,7 +60,7 @@
     transition: 0.2s; }
 
 .check:indeterminate:active, check:indeterminate:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-over.png"), url("assets/checkbox-mixed-over@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-active.png"), url("assets/checkbox-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   .check:indeterminate:active:backdrop, check:indeterminate:active:backdrop {
     opacity: 0.8;
@@ -68,7 +68,7 @@
 
 .check:indeterminate:disabled, check:indeterminate:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-active.png"), url("assets/checkbox-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   .check:indeterminate:disabled:backdrop, check:indeterminate:disabled:backdrop {
     opacity: 0.8;
@@ -97,7 +97,7 @@
 
 .check:checked:disabled, check:checked:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-active.png"), url("assets/checkbox-unchecked-active@2.png"));
   -gtk-icon-shadow: none; }
   .check:checked:disabled:backdrop, check:checked:disabled:backdrop {
     opacity: 0.8;
@@ -121,12 +121,12 @@ menu menuitem check {
 menu menuitem.check:disabled,
 menu menuitem check:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox.png"), url("assets/checkbox@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-active.png"), url("assets/checkbox-checked-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.check:disabled:hover,
   menu menuitem check:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/checkbox.png"), url("assets/checkbox@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-active.png"), url("assets/checkbox-checked-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -153,12 +153,12 @@ menu menuitem check:indeterminate {
 menu menuitem.check:indeterminate:disabled,
 menu menuitem check:indeterminate:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-active.png"), url("assets/checkbox-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.check:indeterminate:disabled:hover,
   menu menuitem check:indeterminate:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-active.png"), url("assets/checkbox-mixed-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -185,12 +185,12 @@ menu menuitem check:checked {
 menu menuitem.check:checked:disabled,
 menu menuitem check:checked:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-active.png"), url("assets/checkbox-unchecked-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.check:checked:disabled:hover,
   menu menuitem check:checked:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-active.png"), url("assets/checkbox-unchecked-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -222,7 +222,7 @@ menu menuitem check:checked:disabled {
 
 .radio:disabled, radio:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.png"), url("assets/radio-unselected@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-active.png"), url("assets/radio-unselected-active@2.png"));
   -gtk-icon-shadow: none; }
   .radio:disabled:backdrop, radio:disabled:backdrop {
     opacity: 0.8;
@@ -243,7 +243,7 @@ menu menuitem check:checked:disabled {
     transition: 0.2s; }
 
 .radio:indeterminate:active, radio:indeterminate:active {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-over.png"), url("assets/radio-mixed-over@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active.png"), url("assets/radio-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   .radio:indeterminate:active:backdrop, radio:indeterminate:active:backdrop {
     opacity: 0.8;
@@ -251,7 +251,7 @@ menu menuitem check:checked:disabled {
 
 .radio:indeterminate:disabled, radio:indeterminate:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active.png"), url("assets/radio-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   .radio:indeterminate:disabled:backdrop, radio:indeterminate:disabled:backdrop {
     opacity: 0.8;
@@ -280,7 +280,7 @@ menu menuitem check:checked:disabled {
 
 .radio:checked:disabled, radio:checked:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"), url("assets/radio-selected@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-selected-active.png"), url("assets/radio-selected-active@2.png"));
   -gtk-icon-shadow: none; }
   .radio:checked:disabled:backdrop, radio:checked:disabled:backdrop {
     opacity: 0.8;
@@ -304,12 +304,12 @@ menu menuitem radio {
 menu menuitem.radio:disabled,
 menu menuitem radio:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio.png"), url("assets/radio@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-active.png"), url("assets/radio-unselected-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.radio:disabled:hover,
   menu menuitem radio:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/radio.png"), url("assets/radio@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-active.png"), url("assets/radio-unselected-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -336,12 +336,12 @@ menu menuitem radio:indeterminate {
 menu menuitem.radio:indeterminate:disabled,
 menu menuitem radio:indeterminate:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active.png"), url("assets/radio-mixed-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.radio:indeterminate:disabled:hover,
   menu menuitem radio:indeterminate:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-active.png"), url("assets/radio-mixed-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
@@ -368,12 +368,12 @@ menu menuitem radio:checked {
 menu menuitem.radio:checked:disabled,
 menu menuitem radio:checked:disabled {
   opacity: 0.5;
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"), url("assets/radio-selected@2.png"));
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-selected-active.png"), url("assets/radio-selected-active@2.png"));
   -gtk-icon-shadow: none; }
   menu menuitem.radio:checked:disabled:hover,
   menu menuitem radio:checked:disabled:hover {
     opacity: 0.5;
-    -gtk-icon-source: -gtk-scaled(url("assets/radio-selected.png"), url("assets/radio-selected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-selected-active.png"), url("assets/radio-selected-active@2.png"));
     animation: none;
     -gtk-icon-shadow: none;
     transition: none; }
