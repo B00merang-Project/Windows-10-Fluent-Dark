@@ -1,7 +1,7 @@
 # Windows 10 Mobile Dark
 ### GTK theme based on the appearance of Windows 10 Mobile and UWP apps
 
-![windows-10-mobile](https://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-from-2018-04-13-11-54-21_orig.png)
+![windows-10-mobile-dark](https://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-from-2018-04-13-11-55-01_1_orig.png)
 
 **Maintainer :** [Elbullazul](https://github.com/Elbullazul) - since April 2017
 
