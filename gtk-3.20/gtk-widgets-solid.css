@@ -283,7 +283,7 @@ button.flat,
 button.flat:backdrop {
     padding: 3px;
     border-width: 1px;
-    border-radius: 5px;
+    border-radius: 0;
     border-style: solid;
     box-shadow: none;
     border-color: transparent;
