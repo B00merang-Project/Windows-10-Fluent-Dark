@@ -1,15 +1,15 @@
-# Windows 10 Mobile Dark
-### GTK theme based on the appearance of Windows 10 Mobile and UWP apps
+# Windows 10 Acrylic Dark
+### GTK theme based on the appearance of Microsoft's latest design guidelines, dark version
 
-![windows-10-mobile-dark](https://b00merang.weebly.com/uploads/1/6/8/1/16813022/screenshot-from-2018-04-13-11-55-01_1_orig.png)
+![acrylic-dark](https://github.com/B00merang-Project/gallery/raw/master/Windows%2010%20Acrylic%20Dark%20(3).png)
 
-**Maintainer :** [Elbullazul](https://github.com/Elbullazul) - since April 2017
+**Maintainer :** [Elbullazul](https://github.com/Elbullazul)
 
 **Distributor :** [B00merang Theming](https://github.com/B00merang-Project)
 
 **License :** GPL v3
 
-**More info :** http://b00merang.weebly.com/windows-10-mobile.html
+**More info :** http://b00merang.weebly.com/windows-10-acrylic.html
 
 ### Manual installation
 
