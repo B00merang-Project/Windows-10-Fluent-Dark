@@ -1,5 +1,8 @@
+[![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
+
 # Windows 10 Acrylic Dark
-### GTK theme based on the appearance of Microsoft's latest design guidelines, dark version
+
+GTK theme based on the appearance of Microsoft's latest design guidelines, dark version
 
 ![acrylic-dark](https://github.com/B00merang-Project/gallery/raw/master/Windows%2010%20Acrylic%20Dark%20(3).png)
 
