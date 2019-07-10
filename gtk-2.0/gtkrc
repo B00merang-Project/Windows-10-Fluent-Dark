@@ -3,10 +3,10 @@
 # based on "Bluebird" by Simon Steinbeiß and Pasi Lallinaho
 # Description: As is the original theme, this theme is 100% free and open source.
 
-gtk-color-scheme	= "bg_color:#111111"
+gtk-color-scheme	= "bg_color:#000000"
 gtk-color-scheme	= "fg_color:#ffffff"
-gtk-color-scheme	= "base_color:#111111" # Background, base.
-gtk-color-scheme	= "text_color:#111111" # Foreground, text.
+gtk-color-scheme	= "base_color:#000000" # Background, base.
+gtk-color-scheme	= "text_color:#ffffff" # Foreground, text.
 gtk-color-scheme	= "selected_bg_color:#1ba0e1"
 gtk-color-scheme	= "selected_fg_color:#ffffff"
 gtk-color-scheme	= "tooltip_bg_color:#1f1f1f"
@@ -14,7 +14,7 @@ gtk-color-scheme	= "tooltip_fg_color:#ffffff" # Tooltips.
 gtk-color-scheme	= "link_color:#224ba0" # Hyperlinks
 gtk-color-scheme	= "panel_bg:#111111" # Panel bg color
 gtk-color-scheme	= "fm_color:#111111" # Color used in Nautilus and Thunar.
-gtk-color-scheme	= "bg_color_dark:#111111"
+gtk-color-scheme	= "bg_color_dark:#1F1F1F"
 gtk-color-scheme	= "text_color_dark:#ffffff"
 gtk-color-scheme	= "shadow_color:#111111" # Xfce desktp icons shadow color
 
@@ -116,7 +116,7 @@ style "default"
 	text[PRELIGHT]    = @text_color
 	text[ACTIVE]      = @selected_fg_color
 	text[SELECTED]    = @selected_fg_color
-	text[INSENSITIVE] = darker (@bg_color)
+	text[INSENSITIVE] = mix (0.4, @fg_color, @bg_color)
 
 	engine "murrine"
 	{
@@ -417,7 +417,7 @@ style "progressbar"
 	ythickness   = 0
 
 	bg[NORMAL] = @bg_color
-	bg[ACTIVE] = shade( 0.9, @bg_color) #trough bg color
+	bg[ACTIVE] = shade( 0.1, @fg_color) #trough bg color
 	bg[SELECTED] = @selected_bg_color
 	bg[PRELIGHT] = @selected_bg_color
 
@@ -500,7 +500,7 @@ style "spin" = "combo"
 style "scale"
 {
 	bg[NORMAL] = @selected_bg_color
-	bg[ACTIVE] = @bg_color
+	bg[ACTIVE] = shade(0.1, @fg_color)
 	bg[SELECTED] = @selected_bg_color
 	bg[INSENSITIVE] = shade (0.95, @bg_color)
 
@@ -1148,7 +1148,7 @@ style "text-is-fg-color-workaround"
 	text[PRELIGHT]    = @fg_color
 	text[SELECTED]    = @selected_fg_color
 	text[ACTIVE]      = @fg_color
-	text[INSENSITIVE] = darker (@bg_color)
+	text[INSENSITIVE] = mix (0.4, @fg_color, @bg_color)
 }
 widget_class "*.<GtkComboBox>.<GtkCellView>"	style "text-is-fg-color-workaround"
 
@@ -1158,7 +1158,7 @@ style "menuitem-text-is-fg-color-workaround"
 	text[PRELIGHT]      = @selected_fg_color
 	text[SELECTED]      = @selected_fg_color
 	text[ACTIVE]        = @fg_color
-	text[INSENSITIVE]   = darker (@bg_color)
+	text[INSENSITIVE]   = mix (0.4, @fg_color, @bg_color)
 }
 widget "*.gtk-combobox-popup-menu.*"	style "menuitem-text-is-fg-color-workaround"
 
