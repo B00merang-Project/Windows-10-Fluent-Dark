@@ -242,10 +242,10 @@ style "entry" = "wider"
 
 style "button" = "wider"
 {
-	bg[NORMAL] = shade (0.95, @bg_color)
-	bg[PRELIGHT] = shade (0.9, @bg_color)
+	bg[NORMAL] = shade (0.15, @fg_color)
+	bg[PRELIGHT] = shade (0.2, @fg_color)
 	bg[ACTIVE] = @selected_bg_color
-	bg[INSENSITIVE] = shade (0.85, @bg_color)
+	bg[INSENSITIVE] = shade (0.1, @fg_color)
 
 	engine "murrine"
 	{
