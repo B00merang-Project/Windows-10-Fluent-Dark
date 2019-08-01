@@ -52,7 +52,7 @@ style "default"
 
 	GtkPaned		::handle-size          			= 3
 
-	GtkNotebook		::tab-overlap				= 0
+	GtkNotebook		::tab-overlap				= 1
 
 	GtkProgressBar		::min-vertical-bar-width		= 10
 	GtkProgressBar		::min-horizontal-bar-height		= 10
@@ -1177,6 +1177,22 @@ widget_class "*<GtkListItem>*"		style "fg-is-text-color-workaround"
 # Only match GtkCList and not the parent widgets, because that would also change the headers.
 widget_class "*<GtkCList>"		style "fg-is-text-color-workaround"
 widget_class "*<EelEditableLabel>"	style "fg-is-text-color-workaround"
+
+# Text Style
+style "text" = "default" {
+  engine "murrine" { textstyle = 0 }
+}
+
+style "menu_text" = "menu_item" {
+  engine "murrine" { textstyle = 0 }
+}
+
+# Fixes ugly text shadows for insensitive text
+widget_class "*<GtkLabel>"                                          style "text"
+widget_class "*<GtkMenu>*<GtkLabel>"                                style "menu_text" 
+widget_class "*<GtkComboBox>*<GtkCellLayout>"                       style "text"
+widget_class "*<GtkNotebook>*<GtkLabel>"                            style "text"
+widget_class "*<GtkNotebook>*<GtkCellLayout>"                       style "text"
 
 # panel theming
 include "panel.rc"
