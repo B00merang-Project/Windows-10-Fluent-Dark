@@ -11,12 +11,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
-   width="128"
-   height="24"
+   width="9"
+   height="20"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
-   sodipodi:docname="stripes.svg"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="panel-separator.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -27,18 +27,18 @@
      pagecolor="#8c8c8c"
      bordercolor="#ff5e00"
      borderopacity="1"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.289063"
-     inkscape:cx="63.37641"
-     inkscape:cy="11.822837"
+     inkscape:zoom="21.802282"
+     inkscape:cx="-20.791849"
+     inkscape:cy="11.747862"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="875"
+     inkscape:window-height="846"
      inkscape:window-x="0"
      inkscape:window-y="25"
      width="400px"
@@ -128,19 +128,14 @@
      inkscape:groupmode="layer"
      inkscape:label="Base"
      id="layer1"
-     transform="translate(0,-276)">
-    <path
-       style="opacity:0.02;fill:#000000;fill-opacity:1;stroke:none"
-       d="M 17 0 L 17 24 L 47 24 L 47 0 L 17 0 z M 81 0 L 81 24 L 111 24 L 111 0 L 81 0 z "
-       transform="translate(0,276)"
-       id="path3053" />
-    <path
-       style="opacity:0.01;fill:#ffffff;fill-opacity:1;stroke:none"
-       d="M 16 0 L 16 24 L 17 24 L 17 0 L 16 0 z M 47 0 L 47 24 L 48 24 L 48 0 L 47 0 z M 80 0 L 80 24 L 81 24 L 81 0 L 80 0 z M 111 0 L 111 24 L 112 24 L 112 0 L 111 0 z "
-       transform="translate(0,276)"
-       id="path3049" />
-    <g
-       id="g3055"
-       transform="translate(25,0)" />
+     transform="translate(0,-280)">
+    <rect
+       style="opacity:0.3;fill:#ffffff;fill-opacity:1"
+       id="rect3834"
+       width="1"
+       height="20"
+       x="4"
+       y="0"
+       transform="translate(0,280)" />
   </g>
 </svg>
