@@ -1692,6 +1692,12 @@ headerbar {
         background-image: url("assets/restore-focused.png"); }
       .maximized headerbar .titlebutton.maximize:backdrop:active {
         background-image: url("assets/restore-focused.png"); }
+  headerbar:not(.titlebar) {
+    color: #FFFFFF;
+    background-color: #000000; }
+    headerbar:not(.titlebar):backdrop {
+      color: #FFFFFF;
+      background-color: #000000; }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -2481,6 +2487,18 @@ messagedialog.csd .dialog-action-area button {
   .caja-desktop:selected, .nemo-desktop.nemo-canvas-item:selected, .nautilus-desktop.nautilus-canvas-item:selected {
     color: #FFFFFF;
     text-shadow: none; }
+
+XfdesktopIconView .view {
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: transparent;
+  text-shadow: 1px 1px alpha(black, 0.8); }
+  XfdesktopIconView .view:active {
+    color: #FFFFFF; }
+XfdesktopIconView:active {
+  color: #FFFFFF;
+  text-shadow: none;
+  background-color: #1BA0E1; }
 
 panel-toplevel.background, panel-toplevel.background menubar {
   background-color: #1F1F1F;
