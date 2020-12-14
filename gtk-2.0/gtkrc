@@ -225,7 +225,7 @@ style "wider"
 
 style "entry" = "wider"
 {
-  bg[NORMAL]        = @base_color
+  bg[NORMAL]        = mix(0.2, @fg_color, @base_color)
 	bg[SELECTED]		= @selected_bg_color
 	base[INSENSITIVE]	= shade (1.06, @bg_color)
 	fg[SELECTED]		= @text_color
@@ -268,7 +268,7 @@ style "notebook-button" = "notebook-bg"
 
 style "notebook-bg"
 {
-	bg[NORMAL] = @base_color
+	bg[NORMAL] = mix(0.1, @fg_color, @base_color)
 	bg[ACTIVE] = shade (0.87, @base_color)
 }
 
