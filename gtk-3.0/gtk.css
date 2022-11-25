@@ -1585,7 +1585,7 @@ headerbar {
   padding: 4px 8px;
   min-height: 32px;
   color: #FFFFFF;
-  background-color: rgba(31, 31, 31, 0.95);
+  background-color: rgba(31, 31, 31, 1);
   border-bottom: 1px solid #333333; }
   headerbar:backdrop {
     background-color: #000000;
