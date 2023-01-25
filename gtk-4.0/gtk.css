@@ -17,7 +17,7 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-image, image:disabled, label, label:disabled, box, box:disabled {
+image, label, box {
   background-color: transparent; }
 
 .view {
@@ -730,44 +730,40 @@ headerbar {
     padding-right: 12px;
     color: alpha(currentColor, 0.7); }
   headerbar button {
-    color: #FFFFFF;
-    padding: 6px 8px;
+    border-color: transparent;
     border-radius: 0px;
-    border: 2px solid transparent;
-    background-color: #414141;
-    outline-width: 0;
-    /*
-  outline-color: $fg_color;
-  outline-offset: 0px;
-  outline-style: solid;
-*/ }
+    color: #FFFFFF;
+    background-color: transparent; }
     headerbar button:hover {
       color: #FFFFFF;
       box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
-      background-color: #414141; }
+      background-color: #262626; }
     headerbar button:active, headerbar button:checked {
       color: #FFFFFF;
-      background-color: #6d6d6d; }
+      background-color: #595959; }
       headerbar button:active:backdrop, headerbar button:checked:backdrop {
         color: #FFFFFF;
         background-color: black; }
     headerbar button:focus {
-      box-shadow: inset 0 0 0 1px #000000;
-      border-color: #FFFFFF; }
+      box-shadow: inset 0 0 0 1px white; }
     headerbar button:disabled {
       color: #ececec;
-      background-color: #1a1a1a; }
+      background-color: #040404; }
       headerbar button:disabled:backdrop {
         color: #404040;
-        background-color: #171717; }
+        background-color: #020202; }
     headerbar button:backdrop {
-      color: #b3b3b3;
-      background-color: #4c4c4c; }
-  headerbar entry {
-    padding: 4px 8px; }
+      color: #b3b3b3; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+
+windowcontrols {
+  border-spacing: 6px; }
+  windowcontrols.start:not(.empty):dir(ltr), windowcontrols.end:not(.empty):dir(rtl) {
+    margin-right: 7px; }
+  windowcontrols.start:not(.empty):dir(rtl), windowcontrols.end:not(.empty):dir(ltr) {
+    margin-left: 7px; }
+  windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
     padding: 7px 14px;
     border: none;
     color: transparent;
@@ -776,68 +772,62 @@ headerbar {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat; }
-    headerbar .titlebutton.close:hover, headerbar .titlebutton.maximize:hover, headerbar .titlebutton.minimize:hover, headerbar .titlebutton:not(separator):hover {
+    windowcontrols button.close:hover, windowcontrols button.maximize:hover, windowcontrols button.minimize:hover {
       background-color: rgba(255, 255, 255, 0.15); }
-    headerbar .titlebutton.close:active, headerbar .titlebutton.maximize:active, headerbar .titlebutton.minimize:active, headerbar .titlebutton:not(separator):active {
+    windowcontrols button.close:active, windowcontrols button.maximize:active, windowcontrols button.minimize:active {
       background-color: rgba(255, 255, 255, 0.3); }
-  headerbar .titlebutton.close {
+  windowcontrols button.close {
     background-image: url("assets/close-focused.png"); }
-    headerbar .titlebutton.close:hover {
+    windowcontrols button.close:hover {
       background-color: #ff5252;
       background-image: url("assets/close-focused-active.png"); }
-    headerbar .titlebutton.close:active {
+    windowcontrols button.close:active {
       background-color: #ff0000;
       background-image: url("assets/close-focused-active.png"); }
-    headerbar .titlebutton.close:backdrop {
+    windowcontrols button.close:backdrop {
       background-image: url("assets/close-unfocused.png"); }
-      headerbar .titlebutton.close:backdrop:hover {
+      windowcontrols button.close:backdrop:hover {
         background-color: #ff5252;
         background-image: url("assets/close-focused-active.png"); }
-      headerbar .titlebutton.close:backdrop:active {
+      windowcontrols button.close:backdrop:active {
         background-color: #ff0000;
         background-image: url("assets/close-focused-active.png"); }
-  headerbar .titlebutton.minimize {
+  windowcontrols button.minimize {
     background-image: url("assets/minimize-focused.png"); }
-    headerbar .titlebutton.minimize:hover {
+    windowcontrols button.minimize:hover {
       background-image: url("assets/minimize-focused.png"); }
-    headerbar .titlebutton.minimize:active {
+    windowcontrols button.minimize:active {
       background-image: url("assets/minimize-focused.png"); }
-    headerbar .titlebutton.minimize:backdrop {
+    windowcontrols button.minimize:backdrop {
       background-image: url("assets/minimize-unfocused.png"); }
-      headerbar .titlebutton.minimize:backdrop:hover {
+      windowcontrols button.minimize:backdrop:hover {
         background-image: url("assets/minimize-focused.png"); }
-      headerbar .titlebutton.minimize:backdrop:active {
+      windowcontrols button.minimize:backdrop:active {
         background-image: url("assets/minimize-focused.png"); }
-  headerbar .titlebutton.maximize {
+  windowcontrols button.maximize {
     background-image: url("assets/maximize-focused.png"); }
-    headerbar .titlebutton.maximize:hover {
+    windowcontrols button.maximize:hover {
       background-image: url("assets/maximize-focused.png"); }
-    headerbar .titlebutton.maximize:active {
+    windowcontrols button.maximize:active {
       background-image: url("assets/maximize-focused.png"); }
-    headerbar .titlebutton.maximize:backdrop {
+    windowcontrols button.maximize:backdrop {
       background-image: url("assets/maximize-unfocused.png"); }
-      headerbar .titlebutton.maximize:backdrop:hover {
+      windowcontrols button.maximize:backdrop:hover {
         background-image: url("assets/maximize-focused.png"); }
-      headerbar .titlebutton.maximize:backdrop:active {
+      windowcontrols button.maximize:backdrop:active {
         background-image: url("assets/maximize-focused.png"); }
-  .maximized headerbar .titlebutton.maximize {
+  .maximized windowcontrols button.maximize {
     background-image: url("assets/restore-focused.png"); }
-    .maximized headerbar .titlebutton.maximize:hover {
+    .maximized windowcontrols button.maximize:hover {
       background-image: url("assets/restore-focused.png"); }
-    .maximized headerbar .titlebutton.maximize:active {
+    .maximized windowcontrols button.maximize:active {
       background-image: url("assets/restore-focused.png"); }
-    .maximized headerbar .titlebutton.maximize:backdrop {
+    .maximized windowcontrols button.maximize:backdrop {
       background-image: url("assets/restore-unfocused.png"); }
-      .maximized headerbar .titlebutton.maximize:backdrop:hover {
+      .maximized windowcontrols button.maximize:backdrop:hover {
         background-image: url("assets/restore-focused.png"); }
-      .maximized headerbar .titlebutton.maximize:backdrop:active {
+      .maximized windowcontrols button.maximize:backdrop:active {
         background-image: url("assets/restore-focused.png"); }
-  headerbar:not(.titlebar) {
-    color: #FFFFFF;
-    background-color: #000000; }
-    headerbar:not(.titlebar):backdrop {
-      color: #FFFFFF;
-      background-color: #000000; }
 
 window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, window.csd > .titlebar:not(headerbar), window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
@@ -1648,7 +1638,7 @@ actionbar {
     padding: 0 12px; }
 
 scrolledwindow > overshoot.top {
-  background-image: radial-gradient(farthest-side at top, black, transparent);
+  background-image: radial-gradient(farthest-side at top, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: top;
@@ -1657,7 +1647,7 @@ scrolledwindow > overshoot.top {
   box-shadow: none; }
 
 scrolledwindow > overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, black, transparent);
+  background-image: radial-gradient(farthest-side at bottom, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1666,7 +1656,7 @@ scrolledwindow > overshoot.bottom {
   box-shadow: none; }
 
 scrolledwindow > overshoot.left {
-  background-image: radial-gradient(farthest-side at left, black, transparent);
+  background-image: radial-gradient(farthest-side at left, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left;
@@ -1675,7 +1665,7 @@ scrolledwindow > overshoot.left {
   box-shadow: none; }
 
 scrolledwindow > overshoot.right {
-  background-image: radial-gradient(farthest-side at right, black, transparent);
+  background-image: radial-gradient(farthest-side at right, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -2362,10 +2352,7 @@ popover.entry-completion > contents {
   padding: 0; }
 
 statusbar {
-  padding: 4px;
-  color: #FFFFFF; }
-  statusbar frame > border {
-    border: none; }
+  padding: 4px; }
 
 menubutton > button > box {
   border-spacing: 6px; }
