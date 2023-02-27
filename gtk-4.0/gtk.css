@@ -448,7 +448,8 @@ button {
   border-radius: 0px;
   border: 2px solid transparent;
   background-color: #262626;
-  outline-width: 0;
+  background-image: none;
+  box-shadow: none;
   /*
   outline-color: $fg_color;
   outline-offset: 0px;
@@ -503,8 +504,8 @@ button {
       color: #b3b3b3; }
 
 button.destructive-action {
-  border: none;
   border-radius: 0px;
+  border: none;
   color: #fae6e6;
   background-color: #CC0000; }
   button.destructive-action:hover {
@@ -516,8 +517,8 @@ button.destructive-action {
     background-color: #8f0000; }
 
 button.suggested-action {
-  border: none;
   border-radius: 0px;
+  border: none;
   color: #FFFFFF;
   background-color: #1BA0E1; }
   button.suggested-action:hover {
