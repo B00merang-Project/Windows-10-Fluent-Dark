@@ -562,39 +562,6 @@ button.suggested-action {
     color: #FFFFFF;
     background-color: #1BA0E1; }
 
-modelbutton {
-  min-height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: none;
-  border-radius: 0px;
-  background-color: transparent;
-  background-image: none;
-  box-shadow: none; }
-  modelbutton:hover {
-    color: #FFFFFF;
-    background-color: #1BA0E1; }
-  modelbutton:selected {
-    color: #FFFFFF;
-    background-color: #1BA0E1; }
-  modelbutton:disabled {
-    color: gray; }
-  modelbutton > image {
-    padding-right: 4px; }
-  modelbutton arrow {
-    background: none;
-    min-width: 16px;
-    min-height: 16px;
-    opacity: 0.3; }
-    modelbutton arrow:hover {
-      background: none; }
-    modelbutton arrow:disabled {
-      opacity: 0.15; }
-    modelbutton arrow.left {
-      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
-    modelbutton arrow.right {
-      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
-
 button.link,
 link {
   color: #1D8ECE;
@@ -1072,7 +1039,7 @@ columnview.view > header > button, treeview.view > header > button, columnview.v
   columnview.view > header > button:last-child, treeview.view > header > button:last-child {
     border-right-style: none; }
 
-popover.background {
+popover.background, popover.background:backdrop {
   font: initial;
   background-color: transparent; }
 
@@ -1080,12 +1047,11 @@ popover > arrow,
 popover > contents {
   border: 1px solid #333333;
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: #1F1F1F;
   background-clip: padding-box;
-  box-shadow: 0 1px 2px rgba(76, 76, 76, 0.7); }
+  box-shadow: none; }
 
 popover > contents {
-  padding: 8px;
   border-radius: 0px; }
   popover > contents > list,
   popover > contents > .view,
@@ -1100,32 +1066,54 @@ popover > contents {
 magnifier {
   background-color: #000000; }
 
-popover.menu menu, popover.menu .menu {
-  margin: 4px;
-  padding: 4px 0px;
-  border-radius: 0px;
+popover.menu > contents {
+  min-width: 120px;
+  padding: 4px; }
+
+popover.menu box.inline-buttons {
+  padding: 0px 4px; }
+
+popover.menu modelbutton {
+  min-height: 20px;
+  padding-left: 4px;
+  padding-right: 4px;
   border: none;
-  color: #FFFFFF;
-  background-color: #1F1F1F; }
-  popover.menu menu menuitem, popover.menu .menu menuitem {
-    min-height: 16px;
-    min-width: 40px;
-    padding: 4px;
-    border: none;
-    border-radius: 0;
+  border-radius: 0px;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none; }
+  popover.menu modelbutton:hover, popover.menu modelbutton:selected {
     color: #FFFFFF;
-    background-color: #1F1F1F; }
-    popover.menu menu menuitem:hover, popover.menu .menu menuitem:hover {
-      color: #FFFFFF;
-      background-color: rgba(27, 160, 225, 0.4); }
-    popover.menu menu menuitem:disabled, popover.menu .menu menuitem:disabled {
-      color: #8f8f8f; }
-    popover.menu menu menuitem accelerator, popover.menu .menu menuitem accelerator {
-      color: alpha(currentColor, 0.55); }
-      popover.menu menu menuitem accelerator:hover, popover.menu .menu menuitem accelerator:hover {
-        color: rgba(255, 255, 255, 0.8); }
-      popover.menu menu menuitem accelerator:disabled, popover.menu .menu menuitem accelerator:disabled {
-        color: #8f8f8f; }
+    background-color: #1BA0E1; }
+  popover.menu modelbutton:disabled {
+    color: gray; }
+  popover.menu modelbutton > image {
+    padding-right: 4px; }
+  popover.menu modelbutton arrow {
+    background: none;
+    min-width: 16px;
+    min-height: 16px;
+    opacity: 0.3; }
+    popover.menu modelbutton arrow:hover {
+      background: none; }
+    popover.menu modelbutton arrow:disabled {
+      opacity: 0.15; }
+    popover.menu modelbutton arrow.left {
+      -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
+    popover.menu modelbutton arrow.right {
+      -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
+
+popover.menu separator {
+  margin: 6px 0; }
+
+popover.menu list separator {
+  margin: 0; }
+
+popover.menu popover.menu {
+  padding: 0 0 4px 0; }
+  popover.menu popover.menu > contents {
+    margin: 0;
+    border-radius: 0px; }
 
 popover.menu accelerator {
   color: alpha(currentColor, 0.55); }
@@ -1979,10 +1967,11 @@ window.dialog.message.csd.background {
 
 window.dialog.message.csd .dialog-action-area button {
   padding: 10px 14px;
-  border-radius: 0;
+  border-radius: 0px;
   border-left-style: solid;
   border-right-style: none;
-  border-bottom-style: none; }
+  border-bottom-style: none;
+  background-image: none; }
   window.dialog.message.csd .dialog-action-area button:first-child {
     border-left-style: none;
     border-bottom-left-radius: 0px; }
