@@ -1650,12 +1650,13 @@ progressbar {
   color: white; }
   progressbar > trough {
     border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     background-color: rgba(255, 255, 255, 0.1); }
     progressbar > trough:backdrop {
       background-color: black; }
   progressbar > trough > progress {
-    border: none;
     border-radius: 0px;
+    border: none;
     background-color: #1BA0E1; }
     progressbar > trough > progress:backdrop {
       background-color: #1BA0E1; }
